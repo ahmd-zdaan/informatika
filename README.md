@@ -13,6 +13,7 @@
 - Shabrina Syeika A. (31)
 
 ### Link:
+- XAMPP: [https://www.apachefriends.org](https://www.apachefriends.org/download.html)
+- MySQL: [https://dev.mysql.com](https://dev.mysql.com/downloads/installer/)
 - PHP: [https://www.php.net](https://www.php.net/downloads.php)
 - Bootstrap: [https://getbootstrap.com](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-- MySQL: [https://dev.mysql.com/](https://dev.mysql.com/downloads/installer/)
