@@ -34,8 +34,7 @@ $id = $_GET['id'];
                         <input type="text" name="name" class="form-control" value="<?= $name ?>">
                     </div>
                     <div class="mb-2">
-                        <p class="mb-2">Date</p>
-                        <!-- <input type="text" name="birthdate" class="form-control" value="<?= $birthdate ?>"> -->
+                        <p class="mb-2">Birthdate</p>
                         <input type="date" name="birthdate" class="form-control" value="<?= $birthdate ?>">
                     </div>
                     <div class="mb-2">

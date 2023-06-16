@@ -9,7 +9,8 @@ include_once "config/connect.php";
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
@@ -17,9 +18,10 @@ include_once "config/connect.php";
         <div class="container p-5">
             <div class="row">
                 <div class="col">
-                    <h2 class="mb-5">Data Kependudukan</h2>
+                    <h2>Data Kependudukan</h2>
+                    <h5 class="mb-5" style="font-weight:normal ">RT 01 RW 19 Kelurahan Purwantoro, Kecamatan Belimbing, Kota Malang</h5>
                 </div>
-                <div class="col text-end">
+                <div class="col-2 text-end">
                     <a href="add.php" class="btn btn-primary">ADD DATA</a>
                 </div>
             </div>
@@ -29,7 +31,8 @@ include_once "config/connect.php";
                         <thead class="thead-light">
                             <tr>
                                 <th scope="col">Name</th>
-                                <th scope="col">Date</th>
+                                <th scope="col">Age</th>
+                                <th scope="col">Birthdate</th>
                                 <th scope="col">Gender</th>
                                 <th scope="col">Address</th>
                                 <th scope="col">Actions</th>
@@ -38,16 +41,24 @@ include_once "config/connect.php";
                         <tbody>
                             <?php
                             $get = get('data_kependudukan');
-                            foreach ($get as $data) :
+                            foreach ($get as $data):
                                 $id = $data['id'];
                                 $name = $data['name'];
                                 $birthdate = $data['birthdate'];
                                 $gender = $data['gender'];
                                 $address = $data['address'];
-                            ?>
+
+                                $birthdate_year = substr($birthdate, 0, 4);
+                                $current_year = date('Y');
+
+                                $age = $current_year - $birthdate_year;
+                                ?>
                                 <tr>
                                     <td>
                                         <?= ucwords($name) ?>
+                                    </td>
+                                    <td>
+                                        <?= $age ?>
                                     </td>
                                     <td>
                                         <?= $birthdate ?>
@@ -59,8 +70,9 @@ include_once "config/connect.php";
                                         <?= ucwords($address) ?>
                                     </td>
                                     <td>
-                                        <a href="edit.php?id=<?=$id?>" class="btn btn-outline-primary btn-sm">EDIT</a>
-                                        <a href="delete.php?id=<?=$id?>" class="btn btn-outline-danger btn-sm" onclick="return confirm('Are you sure to DELETE this DATA?')">DELETE</a>
+                                        <a href="edit.php?id=<?= $id ?>" class="btn btn-outline-primary btn-sm">EDIT</a>
+                                        <a href="delete.php?id=<?= $id ?>" class="btn btn-outline-danger btn-sm"
+                                            onclick="return confirm('Are you sure to DELETE this DATA?')">DELETE</a>
                                     </td>
                                 </tr>
                             <?php endforeach ?>
@@ -96,14 +108,9 @@ include_once "config/connect.php";
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="text-center">
-            <div class="copyright">
-                <p>-</p>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
