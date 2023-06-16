@@ -1,16 +1,16 @@
 # Tugas Proyek Informatika (Tier 1) - Data Kependudukan
 
 ### Kelompok 1:
-- Ahmad Zaidaan (1)
-- Alya Safira P. A. (4)
-- Azril Arvinsyah (6)
-- Clara Nur Zahrah W. (8)
-- Jordan Andrianto (16)
-- Laila Ramadhani (19)
-- Muhammad Affan Rasyadi (21)
-- Nathan Dwi Mahesa P. W. (25)
-- Rizky Ardian M. (29)
-- Shabrina Syeika A. (31)
+- Ahmad Zaidaan (1 / Programmer)
+- Alya Safira P. A. (4 / System Analyst)
+- Azril Arvinsyah (6 / Tester)
+- Clara Nur Zahrah W. (8 / Project Manager)
+- Jordan Andrianto (16 / Tester)
+- Laila Ramadhani (19 / Project Manager)
+- Muhammad Affan Rasyadi (21 / Programmer)
+- Nathan Dwi Mahesa P. W. (25 / System Analyst)
+- Rizky Ardian M. (29 / Tester)
+- Shabrina Syeika A. (31 / System Analyst)
 
 ### Link:
 - XAMPP: [https://www.apachefriends.org](https://www.apachefriends.org/download.html)
