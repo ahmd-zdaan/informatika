@@ -17,7 +17,7 @@ $id = $_GET['id'];
 <body>
     <div class="main-content">
         <div class="container p-5" style="width: 750px">
-            <h2 class="mb-5">Add Data</h2>
+            <h2 class="mb-5">Edit Data</h2>
             <div class="card shadow p-5">
                 <?php
                 $get = get('data_kependudukan', 'WHERE id=' . $id);
