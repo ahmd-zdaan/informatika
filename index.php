@@ -17,7 +17,7 @@ include_once "config/connect.php";
         <div class="container p-5">
             <div class="row">
                 <div class="col">
-                    <h2 class="mb-5">Data Kelahiran</h2>
+                    <h2 class="mb-5">Data Kependudukan</h2>
                 </div>
                 <div class="col text-end">
                     <a href="add.php" class="btn btn-primary">ADD DATA</a>
@@ -37,7 +37,7 @@ include_once "config/connect.php";
                         </thead>
                         <tbody>
                             <?php
-                            $get = get('data_kelahiran');
+                            $get = get('data_kependudukan');
                             foreach ($get as $data) :
                                 $id = $data['id'];
                                 $name = $data['name'];

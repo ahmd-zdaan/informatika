@@ -20,7 +20,7 @@ $id = $_GET['id'];
             <h2 class="mb-5">Add Data</h2>
             <div class="card shadow p-5">
                 <?php
-                $get = get('data_kelahiran', 'WHERE id=' . $id);
+                $get = get('data_kependudukan', 'WHERE id=' . $id);
                 $data = mysqli_fetch_assoc($get);
 
                 $name = $data['name'];
@@ -62,7 +62,7 @@ $id = $_GET['id'];
                     $gender_new = $_POST['gender'];
                     $address_new = $_POST['address'];
 
-					$query = 'UPDATE data_kelahiran SET name="' . $name_new . '", birthdate="'.$birthdate_new.'", gender="'.$gender_new.'", address="'.$address_new.'" WHERE id=' . $id;
+					$query = 'UPDATE data_kependudukan SET name="' . $name_new . '", birthdate="'.$birthdate_new.'", gender="'.$gender_new.'", address="'.$address_new.'" WHERE id=' . $id;
                     $result = mysqli_query($connect, $query);                    
 
                     if ($result) {

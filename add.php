@@ -50,7 +50,7 @@ include_once "config/connect.php";
                     $gender = $_POST['gender'];
                     $address = $_POST['address'];
 
-                    $insert = insert('data_kelahiran', [
+                    $insert = insert('data_kependudukan', [
 						'name' => $name,
 						'birthdate' => $birthdate,
 						'gender' => $gender,
