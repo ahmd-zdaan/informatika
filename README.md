@@ -1,4 +1,4 @@
-# Tugas Proyek Informatika (Tier 1) - Data Kelahiran
+# Tugas Proyek Informatika (Tier 1) - Data Kependudukan
 
 ### Kelompok 1:
 - Ahmad Zaidaan (1)
